@@ -18,7 +18,7 @@ public class Main {
         while (i < 5) {
             upperbound = 70;
             int_random = rand.nextInt(upperbound);
-
+            // Prevent duplicate numbers
             if (!nums.contains(int_random) && int_random > 0) {
                 nums.add(int_random);
                 i++;
